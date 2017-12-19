@@ -91,4 +91,9 @@ public class KickerController : MonoBehaviour {
         rot.eulerAngles = new Vector3(0,0, Mathf.Clamp(leg.transform.rotation.eulerAngles.z, kickMinAngle,kickMaxAngle));
         leg.transform.rotation = rot;
     }
+
+    public void OnKick()
+    {
+        kickSpeed = 0;
+    }
 }
